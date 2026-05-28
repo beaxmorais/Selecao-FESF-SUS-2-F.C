@@ -1,0 +1,11 @@
+services:
+  app:
+    build: .
+    container_name: lembretes-app
+    environment:
+      PORT: 3000
+      SESSION_SECRET: lembretes-dev-secret
+      AUTH_USER: demo
+      AUTH_PASSWORD: demo123
+    ports:
+      - "3000:3000"
